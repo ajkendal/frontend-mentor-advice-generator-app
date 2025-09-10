@@ -57,12 +57,6 @@ For this project, I spent time setting up a stronger foundation for the styling 
   --clr-green: 150, 100%, 66%;
 
   --ff-sans: 'Manrope', sans-serif;
-
-  --spacing-0: 0px;
-  --spacing-200: 16px;
-  --spacing-300: 24px;
-  --spacing-400: 32px;
-  --spacing-500: 40px;
 }
 
 body,
