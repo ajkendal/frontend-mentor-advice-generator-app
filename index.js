@@ -2,7 +2,6 @@
 
 const adviceId = document.getElementById('advice-id');
 const adviceText = document.getElementById('advice-text');
-const diceBtn = document.getElementById('dice-btn');
 
 async function getAdvice(e) {
   e.preventDefault();

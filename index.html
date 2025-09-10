@@ -16,7 +16,9 @@
   </head>
   <body>
     <article class="container">
-      <h1 id="advice-id" class="advice-id text-preset-3 uppercase">#</h1>
+      <header>
+        <h1 id="advice-id" class="advice-id text-preset-3 uppercase">#</h1>
+      </header>
       <p id="advice-text" class="advice-text text-preset-1">
         Click the the button to generate a new piece of advice!
       </p>
@@ -32,7 +34,12 @@
           alt="divider"
         />
       </div>
-      <button id="dice-btn" class="dice" onclick="getAdvice(event)">
+      <button
+        type="button"
+        id="dice-btn"
+        class="dice"
+        onclick="getAdvice(event)"
+      >
         <img src="./images/icon-dice.svg" alt="dice" />
       </button>
     </article>
