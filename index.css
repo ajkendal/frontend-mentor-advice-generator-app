@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  --clr-white: 0 100% 100%;
+  --clr-black: 0 0% 0%;
+  --clr-blue-950: 218, 23%, 16%;
+  --clr-blue-900: 217, 19%, 24%;
+  --clr-blue-600: 217, 19%, 38%;
+  --clr-blue-200: 193, 38%, 86%;
+  --clr-green: 150, 100%, 66%;
+
+  --ff-sans: 'Manrope', sans-serif;
+
+  --spacing-0: 0px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(var(--clr-blue-950));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.text-preset-1 {
+  text-align: center;
+  font-family: var(--ff-sans);
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  line-height: 135%;
+  letter-spacing: -0.3px;
+  font-weight: 800;
+  color: hsl(var(--clr-blue-200));
+}
+
+.text-preset-2 {
+  text-align: center;
+  font-family: var(--ff-sans);
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 135%;
+  letter-spacing: -0.3px;
+  font-weight: 800;
+}
+
+.text-preset-3 {
+  text-align: center;
+  font-family: var(--ff-sans);
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 135%;
+  letter-spacing: 4px;
+  font-weight: 800;
+  color: hsl(var(--clr-green));
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.container {
+  width: 95%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: hsl(var(--clr-blue-900));
+  padding: 2rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.divider {
+  width: 100%;
+}
+.divider img {
+  width: 100%;
+}
+
+.divider-desktop {
+  display: none;
+}
+
+.dice {
+  background-color: hsl(var(--clr-green));
+  border: none;
+  border-radius: 50%;
+  padding: 1.5rem;
+  cursor: pointer;
+  margin-bottom: -4.25rem;
+  box-shadow: 0px 0px 0px hsl(var(--clr-green));
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.dice:hover,
+.dice:focus {
+  box-shadow: 0px 0px 40px hsl(var(--clr-green));
+}
+
+@media (min-width: 35em) {
+  .container {
+    padding: 4rem;
+  }
+  .divider-mobile {
+    display: none;
+  }
+  .divider-desktop {
+    display: block;
+  }
+  .dice {
+    margin-bottom: -6.5rem;
+  }
+}
